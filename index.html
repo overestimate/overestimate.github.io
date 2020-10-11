@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="icon" href="https://cdn.discordapp.com/avatars/346857830734757888/cbf3290894c613d3aa03cb3e27df4077.png?size=128" />
+    <script src="assets/js/three.r95.min.js"></script>
+    <script src="assets/js/vanta.waves.min.js"></script>
+    <title>Tyler Lawrence</title>
+</head>
+
+<body>
+    <div id="bg" width="100%" height="100%">
+    </div>
+    <div id="particles-js"></div>
+    <!-- stats - count particles -->
+    <div class="count-particles"> <span class="js-count-particles"></span></div>
+    <div aria-hidden="true" class="modal fade" tabindex="-1" id="project-modal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title ">My Projects</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <em>My Projects:</em>
+                        <br />
+                        <h2>3Snipe</h2>
+                        <br /> 3Snipe is a namesniper for Minecraft.
+                        <br /> It automates the process of changing your name on a name that is coming out soon.
+                        <br /> Check it out <a href="https://3snipe.com">here.</a>
+                        <br />
+                        <h2>MC Name Checker</h2>
+                        <br /> Checks a list of Minecraft usernames to see if they are coming out soon or
+                        <br /> available.
+                        <br /> Download it <a href="/assets/other/Mass MC Name Checker.zip">here</a>.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div aria-hidden="true" class="modal fade" tabindex="-1" id="paste-modal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title ">Paste</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2>Paste</h2><br />Paste your text here, and you will be redirected to the paste upon submitting.</p>
+                    <form action="paste.php" method="POST">
+                        <div class="form-group">
+                            <textarea style="resize:both;" name="paste" id="paste" placeholder="Paste text here..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="submit" id="submit" value="Paste!" />
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="center-box">
+        <div class="styled-contents">
+            <img style="display: inline-block;" src="https://cdn.discordapp.com/avatars/346857830734757888/cbf3290894c613d3aa03cb3e27df4077.png?size=128"></img>
+            <p>Hi, I'm Tyler, commonly known as tygamer1to7<br />online. Welcome to my website!</p>
+            <div class="button-group">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project-modal">
+                My Projects
+                </button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#paste-modal">
+                    Paste
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- load bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+        VANTA.WAVES({
+            el: "#bg",
+            mouseControls: false,
+            touchControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            waveHeight: 26.50,
+            waveSpeed: 1.15
+        })
+    </script>
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 160,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 1,
+                    "random": true,
+                    "anim": {
+                        "enable": true,
+                        "speed": 1,
+                        "opacity_min": 0,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 4,
+                        "size_min": 0.3,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": false,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 1,
+                    "direction": "none",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 600
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "bubble"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 250,
+                        "size": 0,
+                        "duration": 2,
+                        "opacity": 0,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 400,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+        var count_particles, stats, update;
+        count_particles = document.querySelector('.js-count-particles');
+        update = function() {
+            stats.begin();
+            stats.end();
+            if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+                count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+            }
+            requestAnimationFrame(update);
+        };
+        requestAnimationFrame(update);;
+    </script>
+</body>
