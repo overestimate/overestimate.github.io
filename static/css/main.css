@@ -1,0 +1,86 @@
+/* Import Lato 300, 400, 700 */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+
+    background-color: #ebebeb;
+}
+
+strong {
+    font-weight: 700;
+}
+
+/*
+Apparently, this does not work when I replace div.cover with header. The fuck?
+*/
+div.cover {
+    position: relative;
+
+    margin: 0px 0px 12px 0px;
+    padding: 8px;
+
+    background-image: url('../assets/coverPhoto.jpg');
+    background-position: top;
+    background-size: cover;
+
+    color: whitesmoke;
+}
+div.cover .profile_photo {
+    margin: auto 0 auto auto;
+    display: block;
+}
+div.cover .title {
+    position: absolute;
+    bottom: 4px;
+    left: 12px;
+    display: block;
+}
+div.cover span {
+    color: #ffd7d7;
+}
+div.cover .title > * {
+    margin: 4px auto;
+}
+
+/* Main content CSS, Flexbox layout is "fun" */
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: stretch;
+    margin: 6px;
+}
+
+div.card {
+    background-color: #cdcdcd;
+    border-radius: 8px;
+
+    padding: 6px;
+    margin: 6px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 25%;
+}
+
+div.card.fullwidth {
+    flex-basis: 100%;
+}
+
+div.card.halfwidth {
+    flex-basis: 40%;
+}
+
+div.card.onethird {
+    flex-basis: 32%;
+}
+
+div.card.twothirds {
+    flex-basis: 65%;
+}

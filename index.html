@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Home - Emily L.</title>
+    <!-- Start OpenGraph data -->
+    <meta property="og:title" content="Home">
+    <meta property="og:site_name" content="Emma's Website">
+    <meta property="og:url" content="https://overestimate.github.io/">
+    <meta property="og:description"
+        content="This site hosts a few miscellaneous projects, my portfolio, and a general about me page.">
+    <meta property=" og:type" content="website">
+    <meta property="og:image" content="">
+    <!-- End OpenGraph data -->
+    <!-- Favicon and stylesheet imports -->
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="icon" type="image/png" href="static/assets/profilePhoto.png">
+</head>
+
+<body>
+    <header>
+        <!--
+I have tried to replace this next segment with *just* a header element.
+It does not work. Why? I would like to think that any semantic element
+will act the same and are interchangeable in nature, but apparently, 
+HTML5 does not like to be useful and a classic "fuck you" was given.
+        -->
+        <div class="cover">
+            <div class="title">
+                <h1>Hi, I'm <span>Emily</span></h1>
+                <h2>a Go, Python, and HTML5 developer.</h2>
+            </div>
+            <!-- SVG fuckery to make a circlular image -->
+            <svg width="160" height="160" class="profile_photo">
+                <defs>
+                    <clipPath id="pfp_clip">
+                        <circle cx="80" cy="80" r="80" fill="#FFFFFF" />
+                    </clipPath>
+                </defs>
+                <!-- Why are XML-based formats so different? -->
+                <image width="160" height="160" xlink:href="static/assets/profilePhoto.png"
+                    clip-path="url(#pfp_clip)" />
+            </svg>
+        </div>
+    </header>
+    <main>
+        <div class="card fullwidth">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed convallis urna varius, sollicitudin massa gravida, varius justo.
+                Vivamus semper, dui id facilisis gravida, magna nunc consequat velit, vitae elementum tellus mi in odio.
+                Vestibulum tincidunt lobortis erat at pulvinar.
+                Proin tristique accumsan varius.
+                Proin porttitor felis ut lectus molestie, eget commodo turpis suscipit.
+                Etiam tincidunt ligula tempus tincidunt sollicitudin. Suspendisse potenti.
+                Nam consectetur metus ac nibh convallis, id ultricies diam sollicitudin.
+            </p>
+        </div>
+        <div class="card fullwidth">
+            <p>
+                Cras accumsan mollis nibh, sed convallis urna.
+                Mauris gravida libero tincidunt, efficitur eros ac, vehicula nibh.
+                Sed ac tincidunt lorem. Aliquam eleifend laoreet sollicitudin.
+                Pellentesque condimentum lectus in arcu feugiat congue.
+                Curabitur convallis commodo lectus, nec blandit libero bibendum sit amet.
+                Nunc suscipit quam eget purus sodales, convallis pharetra diam viverra.
+                Etiam ut metus aliquet, egestas massa at, tincidunt libero.
+                Nullam scelerisque dui eget mi feugiat congue.
+                Etiam pretium lacus felis, luctus interdum ligula tempus quis.
+                Morbi at ligula nec libero hendrerit tempus.
+                Duis tempus magna ut risus ultrices, ac fermentum augue vulputate.
+                Sed auctor tempor est sed ullamcorper.
+                Aliquam consequat ut enim quis dignissim. 
+                Fusce sodales interdum maximus.
+            </p>
+        </div>
+        <div class="card halfwidth">
+            <p>
+                Suspendisse interdum massa non bibendum elementum.
+                Proin consectetur interdum ante vel tempus.
+                Sed sit amet purus est.
+                Integer rutrum semper turpis sed sagittis.
+                Pellentesque congue mauris sed mauris sagittis, et molestie dui aliquet.
+                Integer luctus fermentum venenatis.
+                Curabitur ornare placerat dictum.
+                Duis dictum risus tincidunt lorem laoreet luctus.
+                Phasellus interdum purus at sollicitudin vulputate.
+                Ut in condimentum libero.
+                Proin non nulla vitae massa imperdiet vulputate et vitae magna.
+                Donec volutpat nulla elit, id commodo felis gravida vel.
+                Vestibulum sed odio ex.
+                Proin eget urna a.
+                Maecenas id euismod nunc.
+                Curabitur sed risus dignissim, sagittis arcu sed, euismod velit.
+                Nulla non felis ipsum.
+                Etiam ullamcorper ultrices enim.
+            </p>
+        </div>
+        <div class="card halfwidth">
+            <p>
+                Nam fermentum congue dictum.
+                Vivamus dolor augue, ornare eget eleifend vitae, feugiat nec diam.
+                Donec urna lectus, imperdiet eu rutrum quis, consectetur et massa.
+                Sed non luctus libero, id venenatis tellus.
+                Vivamus vitae nulla pellentesque, commodo quam et, tristique nisi.
+                Suspendisse nec dolor quis ante fermentum imperdiet non at nibh.
+                Suspendisse leo urna, maximus sed quam vel, eleifend maximus urna.
+                Nulla ultrices consequat nunc vitae cursus.
+                Pellentesque faucibus, nunc in maximus egestas, mauris risus consequat felis, nec efficitur metus libero et ligula.
+                Donec auctor tellus nec elit pretium pellentesque.
+                Integer tempus, massa sed semper dignissim, urna neque sollicitudin turpis, nec ultricies eros tortor eget felis.
+                Mauris auctor, purus sit amet pellentesque vulputate, turpis nulla rhoncus enim, non condimentum metus neque eu lacus.
+                Nunc venenatis gravida tortor eget blandit.
+            </p>
+        </div>
+        <div class="card onethird">
+            <p>
+                Quisque tincidunt leo eros, at sollicitudin metus sollicitudin in.
+                Vivamus pretium ornare ex sit amet luctus.
+                Nunc ullamcorper efficitur dignissim.
+                Aenean lacinia erat nibh, vel aliquam nisl dignissim sed.
+                Phasellus semper urna non nisi ultrices, sit.
+            </p>
+        </div>
+        <div class="card twothirds">
+            <p>
+                Ut tincidunt nibh non magna luctus cursus.
+                Donec ac lobortis sapien, eu vestibulum odio.
+                Vivamus vel ex id neque semper volutpat eget sed risus.
+                Ut hendrerit mauris ut nunc auctor pellentesque.
+                Maecenas at aliquet lorem.
+                Morbi libero dolor, euismod tincidunt tempor non, porta eu magna.
+                Donec ultrices est et lectus aliquam ultrices.
+                Nullam placerat nisl ac blandit cursus.
+                Suspendisse hendrerit massa eu euismod interdum.
+                Donec ornare sagittis auctor. Donec vulputate.
+            </p>
+        </div>
+        <div class="card twothirds">
+            <p>
+                Aliquam tempor maximus lacus non ultricies.
+                Nunc ac libero vel quam egestas sodales.
+                Fusce eget odio tortor.
+                Phasellus malesuada congue leo nec pulvinar.
+                Aliquam tristique nisi diam, id sollicitudin leo sodales sit amet.
+                Donec facilisis turpis nec vehicula accumsan.
+                Ut pellentesque in massa ut placerat.
+                Etiam ac turpis eleifend, luctus quam quis, rutrum tellus.
+                Sed odio quam, sodales et quam vitae, iaculis consectetur lacus.
+                Orci varius natoque penatibus et magnis.
+            </p>
+        </div>
+        <div class="card onethird">
+            <p>
+                In hac habitasse platea dictumst.
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+                Aenean sit amet scelerisque ante.
+                Nam rutrum euismod ante, eget elementum purus commodo sit amet.
+                Pellentesque vel orci.
+            </p>
+        </div>
+    </main>
+</body>
