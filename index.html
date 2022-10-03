@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Home - Emily L.</title>
+    <title>Home - Emily</title>
     <!-- Start OpenGraph data -->
     <meta property="og:title" content="Home">
-    <meta property="og:site_name" content="Emma's Website">
+    <meta property="og:site_name" content="Emily's Website">
     <meta property="og:url" content="https://overestimate.github.io/">
     <meta property="og:description"
         content="This site hosts a few miscellaneous projects, my portfolio, and a general about me page.">
@@ -18,17 +18,14 @@
 
 <body>
     <header>
-        <!--
-I have tried to replace this next segment with *just* a header element. It does not work. Why? I would like to think that
-any semantic element will act the same and are interchangeable in nature, but apparently, HTML5 does not like to be useful.
-        -->
+
         <div class="cover">
             <div class="title">
                 <h1>Hi, I'm <span>Emily</span></h1>
                 <h2>a Go, Python, and HTML5 developer.</h2>
             </div>
             <!-- SVG fuckery to make a circlular image -->
-            <svg width="160" height="160" class="profile_photo">
+            <svg class="profile_photo">
                 <defs>
                     <clipPath id="pfp_clip">
                         <circle cx="80" cy="80" r="80" fill="#FFFFFF" />
@@ -41,56 +38,25 @@ any semantic element will act the same and are interchangeable in nature, but ap
         </div>
     </header>
     <main>
-        <h1>
-            A title
-        </h1>
-        <h2>
-            and a very nice subtitle
-        </h2>
-        <p>
-            Some paragraph, with <em>stylized</em> <b>text</b>.
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mauris ipsum, volutpat varius consequat
-            id, fringilla a purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla malesuada, erat et
-            tincidunt faucibus, leo eros consequat nulla, in malesuada elit diam nec dui. Donec lectus neque, hendrerit
-            sit amet odio nec, rhoncus tincidunt felis. Donec vel felis at est sagittis posuere. Etiam porta, dui ac
-            finibus suscipit, tellus tellus lacinia odio, eu ullamcorper velit nibh ut dui. Ut nec viverra quam. Quisque
-            eget accumsan velit. Donec ac tempus lectus. Donec eget lacus sed mi ultrices molestie. Integer in molestie
-            dui. Aliquam erat volutpat. Sed hendrerit vestibulum odio eget suscipit. Aenean nec sem sit amet ante
-            molestie vulputate non quis risus.
-        </p>
-        <p>
-            Proin et lorem arcu. In efficitur sit amet erat id vehicula. Quisque lacinia mollis turpis a aliquet.
-            Vivamus rutrum finibus velit, ut ultrices nisi pharetra a. Aenean id malesuada justo, in cursus ligula.
-            Etiam at quam augue. Maecenas porta nulla id fringilla cursus. Aliquam imperdiet purus non posuere interdum.
-            Sed iaculis quam ut velit feugiat consequat. Nam auctor fermentum augue, ac volutpat purus tempor ac.
-            Curabitur at odio in lorem dictum vestibulum vel at dui.
-        </p>
-        <p>
-            Morbi eu sodales nisl. Mauris ullamcorper augue sed quam auctor vehicula. Nulla dolor nisl, scelerisque non
-            semper at, scelerisque vel tortor. Donec nec velit dignissim, vulputate ante sodales, lobortis risus. Cras
-            at finibus risus. Duis a dui id erat elementum lobortis vel et ipsum. Etiam sagittis massa nec ante
-            malesuada, vel sagittis nulla pretium. Suspendisse ac magna malesuada, condimentum augue ut, tempus augue.
-            Integer accumsan diam a est mattis laoreet. Suspendisse semper lacinia turpis eu scelerisque. Donec non
-            luctus diam. Morbi pellentesque magna at justo tincidunt pharetra. Donec in tincidunt orci.
-        <p>
-            Aenean et mauris hendrerit, feugiat dui et, bibendum odio. Nullam posuere, metus nec imperdiet condimentum,
-            lectus enim iaculis dolor, eget feugiat nunc sem sit amet arcu. Aliquam lobortis, eros non vehicula
-            bibendum, velit tortor facilisis purus, sit amet mollis tellus orci ut metus. Vivamus arcu ligula, accumsan
-            sit amet mauris at, placerat feugiat orci. Morbi nisi odio, dapibus eget dapibus et, ornare ut urna.
-            Phasellus consectetur ante at nunc tempus, ac congue urna consectetur. Nulla et risus vel leo iaculis
-            aliquam ut eu est. Cras dignissim aliquam tincidunt. Donec non cursus dui.
-        </p>
-        <p>
-            Quisque sagittis cursus mauris non aliquet. Aenean rhoncus lacus non convallis tincidunt. Mauris elementum
-            nisi sed arcu luctus venenatis. Mauris mollis nunc quis neque fermentum, sed tincidunt neque ultrices. Sed
-            dictum id est at volutpat. Quisque sodales lorem ut augue consectetur faucibus. Vestibulum pulvinar sem non
-            velit efficitur aliquam. Suspendisse odio sapien, lobortis vitae lectus eu, viverra luctus enim. Donec
-            mollis mi nec erat euismod scelerisque. Etiam vitae semper neque, eget interdum quam. Suspendisse potenti.
-            Aliquam et scelerisque diam. Pellentesque eget malesuada mi, ac tempor nibh. Aenean ante nulla, malesuada ut
-            vulputate sed, rhoncus eu lorem. Praesent suscipit orci metus. Integer sed enim vestibulum, facilisis dui
-            eget, commodo lorem.
-        </p>
+        <card>
+            <div class="card-top"><img class="card-color-one" src="./static/assets/blank.png"/></div>
+            <strong class="card-title">Where can you contact me?</strong><br>
+            <p class="card-body">
+                I'm available on <a href="https://twitter.com/overestimate_" target="_blank">Twitter</a>, <a href="https://discord.com/users/346857830734757888" target="_blank">Discord</a>,
+                <a href="https://instagram.com/overestimate_04" target="_blank">Instagram</a>, and <a href="https://t.me/overestimate_04" target="_blank">Telegram</a>.
+            </p>
+        </card>
+        <card class=".fg3">
+            <div class="card-top"><img class="card-color-two" src="./static/assets/blank.png"/></div>
+            <strong class="card-title">What's my most notable project?</strong><br>
+            <p class="card-body">
+                Likely my contributions to <a href="https://github.com/Kqzz/mcgo" target="_blank">Kqzz/mcgo</a> and
+                <a href="https://github.com/Kqzz/mcsnipergo">MCsniperGO</a>. You can see my other work
+                <a href="https://github.com/overestimate?tab=repositories" target="_blank">on my repository tab</a>.
+            </p>
+        </card>
     </main>
+    <footer>
+        
+    </footer>
 </body>
