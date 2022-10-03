@@ -1,2 +1,2 @@
-@import url('desktop.css') (any-pointer: fine);
-@import url('mobile.css') not (any-pointer: fine);
+@import url('./desktop.css') (any-pointer: fine);
+@import url('./mobile.css') not (any-pointer: fine);
