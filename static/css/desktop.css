@@ -1,3 +1,5 @@
+@import url('revert-mobile.css');
+
 /* #region Font/text setup */
 /* Import Lato 300, 400, 700 */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
@@ -38,10 +40,6 @@ main {
     align-items: stretch;
 }
 
-main>* {
-    flex: inherit;
-}
-
 /* I need to learn SCSS or SASS. */
 main h1,
 h2,
@@ -71,8 +69,6 @@ h6 {
 Apparently, this does not work when I replace div.cover with header, so there's that.
 */
 div.cover {
-    display: inherit;
-    height: inherit;
     position: relative;
 
     margin: 0px 0px 12px 0px;
@@ -93,7 +89,6 @@ div.cover .profile_photo {
 }
 
 div.cover .title {
-    font-size: 100%;
     position: absolute;
     bottom: 4px;
     left: 12px;
@@ -124,21 +119,17 @@ card a {
 }
 
 card {
-    font-size: 100%;
     flex-grow: 1;
     flex-shrink: 1;
     color: var(--card-text-color);
     background-color: var(--card-background);
     margin: auto;
-    display: inherit;
-    height: inherit;
     border-radius: 0.4rem 0.4rem 0.3rem 0.3rem;
 }
 
 card>.card-top {
     overflow: hidden;
     height: 8vh;
-    width: inherit;
     margin: 0;
     padding-top: 0%;
     border-top-left-radius: 0.3rem;
@@ -179,7 +170,6 @@ card>.card-top>img.card-color-three {
 }
 
 card .card-title {
-    padding: inherit;
     position: relative;
     top: -3vh;
     left: 0.8rem;
