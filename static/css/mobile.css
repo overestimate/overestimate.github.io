@@ -34,7 +34,8 @@ main {
     flex-flow: column wrap;
     row-gap: 1vh;
 }
-main > * {
+
+main>* {
     flex: 4 100%;
 }
 
@@ -76,7 +77,7 @@ div.cover .profile_photo {
 }
 
 div.cover .title {
-    font-size:200%;
+    font-size: 200%;
     position: absolute;
     bottom: 4px;
     left: 12px;
@@ -107,7 +108,7 @@ card a {
 }
 
 card {
-    font-size:250%;
+    font-size: 250%;
 
     color: var(--card-text-color);
     background-color: var(--card-background);
@@ -145,13 +146,15 @@ card>.card-top>img.card-color-one {
     mask-image: unset;
     -webkit-mask-image: unset;
 }
-card>.card-top>img.card-color-two  {
+
+card>.card-top>img.card-color-two {
     content: '';
     background: linear-gradient(to bottom, #9f1212df, #9f121200 50%);
     mask-image: unset;
     -webkit-mask-image: unset;
 }
-card>.card-top>img.card-color-three  {
+
+card>.card-top>img.card-color-three {
     content: '';
     background: linear-gradient(to bottom, #129f12df, #129f1200 50%);
     mask-image: unset;

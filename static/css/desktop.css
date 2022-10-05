@@ -1,3 +1,6 @@
+/* Nuke CSS from mobile @import */
+* {all:initial;}
+
 /* #region Font/text setup */
 /* Import Lato 300, 400, 700 */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
@@ -49,11 +52,11 @@ h6 {
 }
 
 .f2 {
-    flex-grow:2;
+    flex-grow: 2;
 }
 
 .fg3 {
-flex-grow:3;
+    flex-grow: 3;
 }
 
 .fs2 {
@@ -150,19 +153,21 @@ card>.card-top>img.card-color-one {
     content: '';
     background: linear-gradient(to bottom, #2f23d2df 5%, #2f23d200);
     mask-image: linear-gradient();
-    -webkit-mask-image: linear-gradient(to bottom, #2f23d2ff 60% , #2f23d200);
+    -webkit-mask-image: linear-gradient(to bottom, #2f23d2ff 60%, #2f23d200);
 }
-card>.card-top>img.card-color-two  {
+
+card>.card-top>img.card-color-two {
     content: '';
     background: linear-gradient(to bottom, #9f1212df 5%, #9f121200);
     mask-image: linear-gradient();
-    -webkit-mask-image: linear-gradient(to bottom, #9f1212ff 60% , #9f121200);
+    -webkit-mask-image: linear-gradient(to bottom, #9f1212ff 60%, #9f121200);
 }
-card>.card-top>img.card-color-three  {
+
+card>.card-top>img.card-color-three {
     content: '';
     background: linear-gradient(to bottom, #129f12df 5%, #129f1200);
     mask-image: linear-gradient();
-    -webkit-mask-image: linear-gradient(to bottom, #129f12ff 60% , #129f1200);
+    -webkit-mask-image: linear-gradient(to bottom, #129f12ff 60%, #129f1200);
 }
 
 card .card-title {
