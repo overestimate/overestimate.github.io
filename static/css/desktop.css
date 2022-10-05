@@ -38,6 +38,10 @@ main {
     align-items: stretch;
 }
 
+main>* {
+    flex: inherit;
+}
+
 /* I need to learn SCSS or SASS. */
 main h1,
 h2,
@@ -67,6 +71,8 @@ h6 {
 Apparently, this does not work when I replace div.cover with header, so there's that.
 */
 div.cover {
+    display: inherit;
+    height: inherit;
     position: relative;
 
     margin: 0px 0px 12px 0px;
@@ -87,6 +93,7 @@ div.cover .profile_photo {
 }
 
 div.cover .title {
+    font-size: 100%;
     position: absolute;
     bottom: 4px;
     left: 12px;
@@ -117,17 +124,21 @@ card a {
 }
 
 card {
+    font-size: 100%;
     flex-grow: 1;
     flex-shrink: 1;
     color: var(--card-text-color);
     background-color: var(--card-background);
     margin: auto;
+    display: inherit;
+    height: inherit;
     border-radius: 0.4rem 0.4rem 0.3rem 0.3rem;
 }
 
 card>.card-top {
     overflow: hidden;
     height: 8vh;
+    width: inherit;
     margin: 0;
     padding-top: 0%;
     border-top-left-radius: 0.3rem;
@@ -149,25 +160,26 @@ card>.card-top>img {
 card>.card-top>img.card-color-one {
     content: '';
     background: linear-gradient(to bottom, #2f23d2df 5%, #2f23d200);
-    mask-image: linear-gradient();
+    mask-image: linear-gradient(to bottom, #2f23d2df 5%, #2f23d200);
     -webkit-mask-image: linear-gradient(to bottom, #2f23d2ff 60%, #2f23d200);
 }
 
 card>.card-top>img.card-color-two {
     content: '';
     background: linear-gradient(to bottom, #9f1212df 5%, #9f121200);
-    mask-image: linear-gradient();
+    mask-image: linear-gradient(to bottom, #9f1212df 5%, #9f121200);
     -webkit-mask-image: linear-gradient(to bottom, #9f1212ff 60%, #9f121200);
 }
 
 card>.card-top>img.card-color-three {
     content: '';
     background: linear-gradient(to bottom, #129f12df 5%, #129f1200);
-    mask-image: linear-gradient();
+    mask-image: linear-gradient(to bottom, #129f12df 5%, #129f1200);
     -webkit-mask-image: linear-gradient(to bottom, #129f12ff 60%, #129f1200);
 }
 
 card .card-title {
+    padding: inherit;
     position: relative;
     top: -3vh;
     left: 0.8rem;
