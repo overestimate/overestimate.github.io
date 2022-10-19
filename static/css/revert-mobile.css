@@ -107,6 +107,20 @@ card>.card-top>img.cc4 {
     mask-image: revert;
     -webkit-mask-image: revert;
 }
+card>.card-top>img.cc5 {
+    content: revert;
+    background: revert;
+    mask-image: revert;
+    -webkit-mask-image: revert;
+}
+card>.card-top>img.tus {
+    content: revert;
+    background-image: revert;
+    background-size: revert;
+    mask-image: revert;
+    -webkit-mask-image: revert;
+}
+
 card .card-title {
     padding: revert;
     position: revert;

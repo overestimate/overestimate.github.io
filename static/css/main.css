@@ -1,2 +1,4 @@
 @import url('./mobile.css');
 @import url('./desktop.css') (any-pointer: fine);
+/* I have no idea *why* I need to do this, but iOS Safari does not like `@import url() not (any-pointer: fine);` and
+`@import url() (any-pointer: coarse);`, which is SERIOUSLY annoying. Thanks, Apple! */
