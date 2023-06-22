@@ -66,6 +66,7 @@
         .nameplate {
             margin-top: 8%;
             padding: 2% calc(50% - 100);
+            right: calc(50% - 100);
         }
 
         b {
@@ -82,14 +83,17 @@
             padding: 6% 0;
             height: 12%;
             margin: 24px 20%;
+            text-align: center;
         }
 
         ul {
             margin: 10% 0 0 0;
             height: 100%;
         }
-
-        a {
+        span {
+            right: 0;
+        }
+        a, i {
             font-size: 300%;
         }
 
@@ -105,13 +109,19 @@
             }
 
             .nameplate {
+                margin-top: initial;
                 padding: 2% calc(50% - 100px);
             }
 
             li {
-                border-radius: 8px;
                 width: 16%;
                 margin: 6px 42%;
+                padding: initial;
+                height: initial;
+            }
+            ul {
+                margin: initial;
+                height: initial;
             }
         }
     </style>
@@ -151,20 +161,23 @@
     </div>
     <ul>
         <li>
+            <i class="bi bi-discord"></i>
             <a target="_blank" href="https://discord.com/users/346857830734757888">
-                <i class="bi bi-discord"></i>
                 <span>Discord</span>
             </a>
         </li>
         <li>
+            <i class="bi bi-telegram"></i>
             <a target="_blank" href="https://t.me/ovest04">
-                <i class="bi bi-telegram"></i>
                 <span>Telegram</span>
+            </a>
         </li>
         <li>
+            <i class="bi bi-mastodon"></i>
             <a target="_blank" href="https://tech.lgbt/@overestimate">
-                <i class="bi bi-mastodon"></i>
+                
                 <span>Mastodon</span>
+                </a>
         </li>
     </ul>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
