@@ -1,101 +1,171 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Home - Emily</title>
-    <!-- Start OpenGraph data -->
-    <meta property="og:title" content="Home">
-    <meta property="og:site_name" content="Emily's Website">
-    <meta property="og:url" content="https://overestimate.github.io/">
-    <meta property="og:description"
-        content="This site hosts a few miscellaneous projects, my portfolio, and a general about me page.">
-    <meta property=" og:type" content="website">
-    <meta property="og:image" content="">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;1000;700&display=swap');
+
+        * {
+            font-family: 'Lato', 'Arial', sans-serif;
+            font-weight: 300;
+        }
+
+        a {
+            font-size: xx-large;
+            text-decoration: none;
+            color: var(--card-text-color);
+        }
+
+        strong,
+        b {
+            font-weight: 700;
+            font-size: x-large;
+        }
+
+        :root {
+            --accent-title-text: #ffd7d7;
+            --hyperlink-color: #bb6f6f;
+            --card-background: #201f24;
+            --card-background-transparent: #1c1a1c00;
+            --card-text-color: #bbbbbf;
+        }
+
+        body {
+            padding: 0px;
+            margin: 0px;
+
+            background-color: #2f2f2f;
+            color: #bbb;
+        }
+
+        ul {
+            list-style-type: none;
+            text-align: center;
+            padding: 0;
+        }
+
+        li {
+            background-color: var(--card-background);
+        }
+
+        .nameplate {
+            align-content: center;
+            text-align: center;
+            color: var(--accent-title-text);
+        }
+
+        @media (any-pointer: fine) {
+            .pfp_desktop {
+                display: block;
+            }
+
+            .pfp_mobile {
+                display: none;
+            }
+
+            .nameplate {
+                padding: 2% calc(50% - 100px);
+            }
+
+            li {
+                border-radius: 8px;
+                width: 16%;
+                margin: 6px 42%;
+            }
+        }
+
+
+
+        @media not (any-pointer: fine) {
+            .pfp_desktop {
+                display: none;
+            }
+
+            .nameplate {
+                margin-top: 8%;
+                padding: 2% calc(50% - 100);
+            }
+
+            b {
+                font-size: 400%;
+            }
+
+            .nameplate>svg {
+                padding: 2% calc(50% - 100);
+            }
+
+            li {
+                border-radius: 8px;
+                width: 60%;
+                padding: 6% 0;
+                height: 12%;
+                margin: 24px 20%;
+            }
+
+            ul {
+                margin: 10% 0 0 0;
+                height: 100%;
+            }
+            a {
+                font-size: 300%;
+            }
+        }
+
+
+    </style>
+    <meta charset="UTF-8">
+    <title>implied.win</title>
+    <meta property="og:title" content="Emily's Socials">
+    <meta property="og:site_name" content="implied.win">
+    <meta property="og:url" content="https://implied.win">
+    <meta property="og:type" content="website">
     <!-- End OpenGraph data -->
+    <!-- Mastodon verification -->
+    <a style="display:none;" rel="me" href="https://tech.lgbt/@overestimate">mastodon verification linkback</a>
     <!-- Favicon and stylesheet imports -->
-    <link rel="stylesheet" href="./static/css/main.css">
-    <link rel="icon" type="image/png" href="./static/assets/profilePhoto.png">
+    <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/58041173?v=4">
 </head>
 
 <body>
-    <header>
-
-        <div class="cover">
-            <div class="title">
-                <h1>Hi, I'm <span>Emily</span></h1>
-                <h2>a Go, Python, and HTML5 developer.</h2>
-            </div>
-            <!-- SVG fuckery to make a circlular image -->
-            <svg class="profile_photo">
-                <defs>
-                    <clipPath id="pfp_clip">
-                        <circle cx="80" cy="80" r="80" fill="#FFFFFF" />
-                    </clipPath>
-                </defs>
-                <!-- Why are XML-based formats so different? -->
-                <image width="160" height="160" xlink:href="./static/assets/profilePhoto.png"
-                    clip-path="url(#pfp_clip)" />
-            </svg>
-        </div>
-    </header>
-    <main>
-        <!-- 
-        <card>
-            <div class="card-top"><img class="ccN" src="./static/assets/blank.png" /></div>
-            <strong class="card-title">TITLE</strong><br>
-            <p class="card-body">
-                BODY CONTENT GOES HERE <a href="">HYPERLINK</a>
-            </p>
-        </card>
-        -->
-        <card  class=".fg2">
-            <div class="card-top"><img class="cc1" src="./static/assets/blank.png"/></div>
-            <strong class="card-title">Where can you find me?</strong><br>
-            <p class="card-body">
-                I'm available on <a href="https://twitter.com/overestimate_" target="_blank">Twitter</a>, <a href="https://discord.gg/jMNKucGvSC" target="_blank">Discord</a>,
-                <a href="https://instagram.com/overestimate_04" target="_blank">Instagram</a>, <a href="https://t.me/overestimate_04" target="_blank">Telegram</a>, and <a href="https://github.com/overestimate" target="_blank">GitHub</a>.
-            </p>
-        </card>
-        <card>
-            <div class="card-top"><img class="cc2" src="./static/assets/blank.png"/></div>
-            <strong class="card-title">Kqzz/mcgo</strong><br>
-            <p class="card-body">
-                mcgo is a Mojang API wrapper in Go. I contributed the MSA OAuth2 device code portions. <a href="https://github.com/Kqzz/mcgo" target="_blank">Link to project</a>
-            </p>
-        </card>
-        <card>
-            <div class="card-top"><img class="cc3" src="./static/assets/blank.png" /></div>
-            <strong class="card-title">Kqzz/MCsniperGO</strong><br>
-            <p class="card-body">
-                MCsniperGO is a Minecraft username sniper written in Go. <a href="https://github.com/Kqzz/mcsnipergo">Link to project</a>
-            </p>
-        </card>
-        <card>
-            <div class="card-top"><img class="cc4" src="./static/assets/blank.png" /></div>
-            <strong class="card-title">SpotiPi</strong><br>
-            <p class="card-body">
-                SpotiPi is a web-based Spotify Connect client. It's very minimal, and is mainly designed for a Raspberry Pi song display. <a href="https://github.com/overestimate/SpotiPi">Link to project</a>
-            </p>
-        </card>
-        <card>
-            <div class="card-top"><img class="cc5" src="./static/assets/blank.png" /></div>
-            <strong class="card-title">Other projects</strong><br>
-            <p class="card-body">
-                I've also written a couple of Discord bots and some various snippets used in private code. I can't link them as they aren't public, so you'll just
-                have to take my word on it.
-            </p>
-        </card>
-        <!-- I'm writing a trans health and info hub-type thing. This will be used later.
-        <card>
-            <div class="card-top"><img class="tus" src="./static/assets/blank.png" /></div>
-            <strong class="card-title">Looking for transition info?</strong><br>
-            <p class="card-body">
-                Are you in need of voice training info, HRT info, or other things related to transition? I have a 
-                page you can access at the following link, if you need it. <a href="trans_health/">Trans info hub</a>
-            </p>
-        </card>
-        -->
-    </main>
-    <footer>
-        
-    </footer>
+    <div class="nameplate">
+        <svg width="200" height="200" class="pfp_desktop">
+            <defs>
+                <clipPath id="pfp_clip">
+                    <circle cx="100" cy="100" r="100" fill="#FFFFFF" />
+                </clipPath>
+            </defs>
+            <image width="200" height="200" xlink:href="/assets/profilePhoto.png" clip-path="url(#pfp_clip)" />
+        </svg>
+        <svg width="400" height="400" class="pfp_mobile">
+            <defs>
+                <clipPath id="pfp_clip_mob">
+                    <circle cx="200" cy="200" r="200" fill="#FFFFFF" />
+                </clipPath>
+            </defs>
+            <image width="400" height="400" xlink:href="/assets/profilePhoto.png" clip-path="url(#pfp_clip_mob)" />
+        </svg>
+        <br>
+        <b>Emily</b>
+    </div>
+    <ul>
+        <li>
+            <a target="_blank" href="https://discord.com/users/346857830734757888">
+                <i class="bi bi-discord"></i>
+                <span>Discord</span>
+            </a>
+        </li>
+        <li>
+            <a target="_blank" href="https://t.me/ovest04">
+                <i class="bi bi-telegram"></i>
+                <span>Telegram</span>
+        </li>
+        <li>
+            <a target="_blank" href="https://tech.lgbt/@overestimate">
+                <i class="bi bi-mastodon"></i>
+                <span>Mastodon</span>
+        </li>
+    </ul>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 </body>
+
+</html>
