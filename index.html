@@ -54,7 +54,48 @@
             color: var(--accent-title-text);
         }
 
+        .pfp_desktop {
+            display: none;
+        }
+
+        .pfp_mobile {
+            display: block;
+        }
+
+
+        .nameplate {
+            margin-top: 8%;
+            padding: 2% calc(50% - 100);
+        }
+
+        b {
+            font-size: 400%;
+        }
+
+        .nameplate>svg {
+            padding: 2% calc(50% - 100);
+        }
+
+        li {
+            border-radius: 8px;
+            width: 60%;
+            padding: 6% 0;
+            height: 12%;
+            margin: 24px 20%;
+        }
+
+        ul {
+            margin: 10% 0 0 0;
+            height: 100%;
+        }
+
+        a {
+            font-size: 300%;
+        }
+
+
         @media (any-pointer: fine) {
+
             .pfp_desktop {
                 display: block;
             }
@@ -73,45 +114,6 @@
                 margin: 6px 42%;
             }
         }
-
-
-
-        @media not (any-pointer: fine) {
-            .pfp_desktop {
-                display: none;
-            }
-
-            .nameplate {
-                margin-top: 8%;
-                padding: 2% calc(50% - 100);
-            }
-
-            b {
-                font-size: 400%;
-            }
-
-            .nameplate>svg {
-                padding: 2% calc(50% - 100);
-            }
-
-            li {
-                border-radius: 8px;
-                width: 60%;
-                padding: 6% 0;
-                height: 12%;
-                margin: 24px 20%;
-            }
-
-            ul {
-                margin: 10% 0 0 0;
-                height: 100%;
-            }
-            a {
-                font-size: 300%;
-            }
-        }
-
-
     </style>
     <meta charset="UTF-8">
     <title>implied.win</title>
