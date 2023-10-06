@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        
         @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;1000;700&display=swap');
 
         * {
@@ -73,8 +75,8 @@
             font-size: 400%;
         }
 
-        .nameplate>svg {
-            padding: 2% calc(50% - 100);
+        .nameplate>img {
+            border-radius: 100%;
         }
 
         li {
@@ -90,15 +92,18 @@
             margin: 10% 0 0 0;
             height: 100%;
         }
+        
         span {
             right: 0;
         }
-        a, i {
+
+        a,
+        i {
             font-size: 300%;
         }
 
 
-        @media (any-pointer: fine) {
+        @media (min-width:768px) {
 
             .pfp_desktop {
                 display: block;
@@ -114,14 +119,40 @@
             }
 
             li {
-                width: 16%;
-                margin: 6px 42%;
-                padding: initial;
+                width: 40%;
+                margin: 6px 30%;
+                padding: 0 1%;
                 height: initial;
+                text-align: left;
             }
+
+            li>a>i {
+                position: absolute;
+                right: 29%;
+                display: inline-block;
+                font-size: 100%;
+            }
+
             ul {
                 margin: initial;
                 height: initial;
+            }
+        }
+        @media (max-width: 767px) {
+            .pfp_mobile { position: relative; display: inline-block; height: 12%; width: 12%; transform: translate(20%, 20%);}
+            .pfp_desktop {display: none; }
+            li > a > span {
+                display: none;
+            }
+            li>a>i {
+                position: relative;
+                display: inline-block;
+                font-size: 170%;
+            }
+            li {
+                height: fit-content;
+                width: 50%;
+                margin: 2% 25%
             }
         }
     </style>
@@ -140,44 +171,23 @@
 
 <body>
     <div class="nameplate">
-        <svg width="200" height="200" class="pfp_desktop">
-            <defs>
-                <clipPath id="pfp_clip">
-                    <circle cx="100" cy="100" r="100" fill="#FFFFFF" />
-                </clipPath>
-            </defs>
-            <image width="200" height="200" xlink:href="/assets/profilePhoto.png" clip-path="url(#pfp_clip)" />
-        </svg>
-        <svg width="400" height="400" class="pfp_mobile">
-            <defs>
-                <clipPath id="pfp_clip_mob">
-                    <circle cx="200" cy="200" r="200" fill="#FFFFFF" />
-                </clipPath>
-            </defs>
-            <image width="400" height="400" xlink:href="/assets/profilePhoto.png" clip-path="url(#pfp_clip_mob)" />
-        </svg>
+        <img src="/assets/profilePhoto.png" class="pfp_desktop" />
         <br>
-        <b>Emily</b>
+        <b>Emily</b><img src="/assets/profilePhoto.png" width="12%" height="12%" class="pfp_mobile">
     </div>
     <ul>
         <li>
-            <i class="bi bi-discord"></i>
-            <a target="_blank" href="https://discord.com/users/346857830734757888">
+            <a target="_blank" href="https://discord.gg/4wyBUwEn4K">
                 <span>Discord</span>
+                <i class="bi bi-discord"></i>
             </a>
         </li>
         <li>
-            <i class="bi bi-telegram"></i>
+
             <a target="_blank" href="https://t.me/ovest04">
                 <span>Telegram</span>
+                <i class="bi bi-telegram"></i>
             </a>
-        </li>
-        <li>
-            <i class="bi bi-mastodon"></i>
-            <a target="_blank" href="https://tech.lgbt/@overestimate">
-                
-                <span>Mastodon</span>
-                </a>
         </li>
     </ul>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
