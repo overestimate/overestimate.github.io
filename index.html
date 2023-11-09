@@ -4,7 +4,6 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        
         @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;1000;700&display=swap');
 
         * {
@@ -92,7 +91,7 @@
             margin: 10% 0 0 0;
             height: 100%;
         }
-        
+
         span {
             right: 0;
         }
@@ -126,7 +125,7 @@
                 text-align: left;
             }
 
-            li>a>i {
+            li>i {
                 position: absolute;
                 right: 29%;
                 display: inline-block;
@@ -138,17 +137,30 @@
                 height: initial;
             }
         }
+
         @media (max-width: 767px) {
-            .pfp_mobile { position: relative; display: inline-block; height: 12%; width: 12%; transform: translate(20%, 20%);}
-            .pfp_desktop {display: none; }
-            li > a > span {
+            .pfp_mobile {
+                position: relative;
+                display: inline-block;
+                height: 12%;
+                width: 12%;
+                transform: translate(20%, 20%);
+            }
+
+            .pfp_desktop {
                 display: none;
             }
-            li>a>i {
+
+            li>span {
+                display: none;
+            }
+
+            li>i {
                 position: relative;
                 display: inline-block;
                 font-size: 170%;
             }
+
             li {
                 height: fit-content;
                 width: 50%;
@@ -176,19 +188,30 @@
         <b>Emily</b><img src="/assets/profilePhoto.png" width="12%" height="12%" class="pfp_mobile">
     </div>
     <ul>
-        <li>
-            <a target="_blank" href="https://discord.gg/4wyBUwEn4K">
+        <a target="_blank" href="https://discord.gg/C9BzEdFqX4">
+            <li>
                 <span>Discord</span>
                 <i class="bi bi-discord"></i>
-            </a>
-        </li>
-        <li>
-
-            <a target="_blank" href="https://t.me/ovest04">
+            </li>
+        </a>
+        <a target="_blank" href="https://t.me/ovest04">
+            <li>
                 <span>Telegram</span>
                 <i class="bi bi-telegram"></i>
-            </a>
-        </li>
+            </li>
+        </a>
+        <a target="_blank" href="https://twitter.com/womanizedtwink">
+            <li>
+                <span>Twitter</span>
+                <i class="bi bi-twitter"></i>
+            </li>
+        </a>
+        <a target="_blank" href="https://bsky.app/profile/implied.win">
+            <li>
+                <span>Bluesky</span>
+                <i class="bi bi-cloud-fill"></i>
+            </li>
+        </a>
     </ul>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 </body>
